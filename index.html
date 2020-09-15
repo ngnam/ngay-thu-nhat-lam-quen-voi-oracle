@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic HTML Meta Tags -->
+    <title>Ngày thứ nhất làm quen với Oracle</title>
+    <meta name="description" content="Ngày thứ nhất làm quen với Oracle">
+    <meta name="keywords" content="ngay-thu-nhat-lam-quen-voi-oracle" />
+    <meta name="subject" content="Ngày thứ nhất làm quen với Oracle">
+    <meta name="copyright" content="Nguyen Van Nam">
+    <meta name="language" content="vi">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- OpenGraph Meta Tags -->
+    <meta name="og:title" content="Ngày thứ nhất làm quen với Oracle" />
+    <meta name="og:type" content="article" />
+    <meta name="og:url" content="https://ngnam.github.io/ngay-thu-nhat-lam-quen-voi-oracle" />
+    <meta name="og:image"
+        content="https://ngnam.github.io/ngay-thu-nhat-lam-quen-voi-oracle/ngay-thu-nhat-lam-quen-voi-oracle.jpg" />
+    <meta name="og:site_name" content="ngay-thu-nhat-lam-quen-voi-oracle" />
+    <meta name="og:description" content="Ngày thứ nhất làm quen với Oracle" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container mb-1">
+        <div class="row">
+            <h1 class="text-center"># Ngày thứ nhất làm quen với Oracle</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row content">
+            <h3 class="mb-2"> Lựa chọn phiên bản sử dụng.</h3>
+            <p>
+                Các khái niệm các về db, rồi oracle db các thứ là cái gì, tại sao sử dụng, sự khác biệt với các csdl
+                khác như nào bạn tự đọc trên google mình lười lắm không muốn nhắc tới ở đây.
+            </p>
+            <p>
+                Ngày đầu tiên vào dự án tôi được yêu cầu làm quen với oracle dba hay còn gọi là cơ sở dữ liệu oracle!
+                Như bất kì một ngôn ngữ lập trình việc đầu tiên là cài đặt.
+                Oracle hiện có 3 phiên bản nhưng thật ra lúc mình cài đặt thì thấy nó hiện ra 4 phiên bản: 1 cái là EE
+                (Enterprise Edition), SE (Standard Edition (SE) và XE - Expression Edition hay ở 1 số phiên bản khi cài
+                đặt còn có thêm phiên bản PE (Profesional Edition).
+            </p>
+
+            <ol>
+                <li>
+                    Enterprise Edition (EE): là phiên bản phổ biến dành cho doanh nghiệp và phải trả phí. Phù hợp cho
+                    công ty sử dụng trong các dự án. Nó có các
+                    đặc điểm sau:
+                    <ul>
+                        <li>
+                            Không giới hạn số CPUs tối đa.
+                        </li>
+                        <li>
+                            KHông giới hạn bộ nhớ và dung lượng sử dụng.
+                        </li>
+                        <li>
+                            Bao gồm các tính năng cha của cao cấp mà không có trong các phiên bản khác.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Standard Edition (SE): Là phiên bản giới hạn của của phiên bản EE trên, hay còn gọi là phiên bản
+                    dành cho con nhà nghèo, sinh viên - phù hợp với những người mới học.
+                    <ul>
+                        <li>Giới hạn tới 4 hoặc ít hơn CPU.</li>
+                        <li>Không giới hạn bộ nhớ và dung lượng sử dụng</li>
+                        <li>Bao gồm đầy đủ tính năng nhưng không nhiều hơn phiên bản EE.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Expression Edition (XE): Là phiên bản sử dụng miễn phí và có sẵn trên cả 2 nền tảng Windows và
+                    GNU/Linux. Cung cấp các tính năng sau:
+                    <ul>
+                        <li>Giới hạn tới 2 CPU.</li>
+                        <li>Có thể sử dụng tối đa cho bộ nhớ là 2 RAM và 12 GB dung lượng người dùng.</li>
+                        <li>Rất giới hạn một số tính năng.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Sau khi lựa chọn được phiên bản phù hợp cho mình thì đến bước download phiên bản của bạn về. Tìm đúng
+                version và download nó về <a target="_blank"
+                    href="http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html">[tại
+                    đây]</a> </p>
+
+            <p>Chú ý nhỏ nhỏ: Đối với bạn mới học thì mình khuyên nên chọn phiên bản 32 bits sẽ dễ cài đặt hơn phiên bản
+                64 bits (dành cho các bạn đã có kinh nghiệm với SQL).</p>
+
+            <p>Việc cài đặt chắc không có vấn đề gì, cứ chạy và làm theo các bước next của nó, có thể theo dõi chi tiết
+                các bước cài đặt nó <a target="_blank"
+                    href="https://www.oracletutorial.com/getting-started/install-oracle/">ở đây</a> chỉ chủ ý thêm 1 vài
+                điểm sau: </p>
+
+            <ul>
+                <li>- Thư mục môi trường oracle làm việc: Mặc định là Ổ C:\app</li>
+                <li>- Thư mục cài đặt phần mềm,</li>
+                <li>- Thư mục chứa CSDL Oracle</li>
+                <li>- Chọn Phiên bản - và chọn Charset là UTF-8 nhé.</li>
+                <li>- Và nhớ lấy cái tên SI (hay tên Global DB) và password nhập lại 2 lần lúc cài đặt. Quên là thôi
+                    mình không chịu đâu.</li>
+            </ul>
+            <p>Chờ nó chạy xong mà không báo lỗi gì nghĩa là bạn cài xong rồi đó. Có lỗi gì thì cứ search google rồi tìm
+                hiểu sẽ vỡ ra nhiều điều đó.</p>
+
+            <p>OK xong phần cài đặt. Giờ làm sao để sử dụng Oracle Database.</p>
+
+            <h3 class="mb-2 mt-2">Cách sử dụng Oracle.</h3>
+
+            <p>Nếu bạn đã từng làm việc với Cơ sở dữ liệu Microsoft SQL server thì bạn đã quen thuộc với công cụ
+                Management studio hay Dbeaver với các bạn sử dụng nhiều cơ sở dư liệu như postGres, MySQL. Ở Oracle
+                chúng ta có thể sử dụng 1 trong 2 công cụ trên để kết nối tới oracle DB.</p>
+
+            <p>Ở bài viết này mình đang sử dụng 2 công cụ chính đó là <a
+                    href="https://www.oracle.com/tools/downloads/sqldev-downloads.html">PL/SQL Tool - SQL DEVELOPER</a>
+                - nó Miễn phí
+                và <a href="https://www.quest.com/products/toad-for-oracle">Toad for Oracle</a> - Thằng nè phải trả phí.
+                Tự chọn 1 thằng tùy nhu cầu và điều kiện của bạn rồi cài vào máy thôi.
+            </p>
+
+            <p>
+                Sau khi đã có các công cụ để làm việc, Việc tiếp theo bạn sẽ đi vào tìm hiểu các thành phần cơ bản của
+                Oracle BASIC qua các section sau:
+                Mình sẽ nói chi tiết từng phần ở bài sau khi có thời gian.
+
+            <ul>
+                <li>
+                    <h4 class="mb-2">1. S-1: Querying data</h4>
+
+                    <p>Phần này giúp bạn tìm hiểu cách truy vấn dữ liệu từ Cơ sở dữ liệu Oracle. Tôi sẽ bắt đầu
+                        với một truy vấn đơn giản với câu lệnh <b>SELECT</b> - cho phép bạn truy xuất dữ liệu từ một
+                        bảng.</p>
+                </li>
+                <li>
+                    <h4 class="mb-2">2. S-2: Sorting data</h4>
+                    <p>
+                        Phần nằng giúp bạn tìm hiểu cách sử dụng từ khóa <b>ORDER BY</b> để sắp xếp dữ liệu trong câu
+                        lệnh select.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="mb-2">3. S-3: Filtering data</h4>
+                    <p>
+                        Phần nằng giúp bạn tìm hiểu cách để tìm kiếm dữ liệu trong câu lệnh select. Một vài câu lệnh
+                        như:
+                    <ol>
+                        <li>
+                            DISTINCT – nó sẽ giúp bạn cách loại bỏ các phần tử (hay các dòng) trùng lặp khỏi đầu ra của
+                            một truy vấn.
+                        </li>
+                        <li>
+                            WHERE – tìm hiểu cách thêm các điều kiện tìm kiếm, lọc trong câu truy vấn.
+                        </li>
+                        <li>
+                            AND – So sánh 2 hoặc nhiều biểu thức logic và trả về true nếu tất cả biểu thức là true.
+                        </li>
+                        <li>
+                            OR– So sánh 2 hoặc nhiều biểu thức logic và trả về true nếu 1 trong chúng trả về là true.
+                        </li>
+                        <li>
+                            FETCH – chỉ cho bạn cách lấy ra số lượng các bảng ghi được trả về bởi một truy vấn bằng cách
+                            sử dụng mệnh đề giới hạn bảng ghi FETCH.
+                        </li>
+                        <li>
+                            IN – xác định xem một giá trị có khớp với bất kỳ giá trị nào trong danh sách hoặc truy vấn
+                            con hay không.
+                        </li>
+                        <li>
+                            BETWEEN – lọc dữ liệu dựa trên một khoảng 2 hoặc nhiều các giá trị trở lên.
+                        </li>
+                        <li>
+                            LIKE – thực hiện đối sánh dựa trên các mẫu cụ thể.
+                        </li>
+                        <li>
+                            IS NULL and IS NOT NULL – kiểm tra xem một biểu thức hoặc các giá trị trong một cột có phải
+                            là NULL hay không.
+                        </li>
+                    </ol>
+                    </p>
+                </li>
+                <li>
+                    <h4 class="mb-2">4. S-4 Joining tables</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">5. S-5: Grouping data</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">6. S-6: Subquery</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">7. S-7: Set Operators</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">8. S-8 More on Groupings</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">9. s-9: Modifying data</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">10. s-10. Data definition</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">11. Oracle data types</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">12. Constraints</h4>
+                </li>
+                <li>
+                    <h4 class="mb-2">13. Temporary Tables</h4>
+                </li>
+
+            </ul>
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="zoom-page">
+        <span title="Thu nhỏ" id="zoom-in">A--</span>
+        <span title="Phóng to" id="zoom-out">A++</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
